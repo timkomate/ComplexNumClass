@@ -1,2 +1,2 @@
 # ComplexNumClass
-Class that implements Complex numbers
+Class that implements the Complex numbers
