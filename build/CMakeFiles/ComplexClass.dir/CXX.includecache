@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/home/timko/Dokumentumok/C++/ComplexNumClass/include/Complex.h
+
 /home/timko/Dokumentumok/C++/ComplexNumClass/main.cpp
 iostream
 -
-src/Complex.h
-/home/timko/Dokumentumok/C++/ComplexNumClass/src/Complex.h
+include/Complex.h
+/home/timko/Dokumentumok/C++/ComplexNumClass/include/Complex.h
 
 /home/timko/Dokumentumok/C++/ComplexNumClass/src/Complex.cpp
-Complex.h
-/home/timko/Dokumentumok/C++/ComplexNumClass/src/Complex.h
+../include/Complex.h
+/home/timko/Dokumentumok/C++/ComplexNumClass/include/Complex.h
 

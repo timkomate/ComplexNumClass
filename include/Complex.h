@@ -14,6 +14,15 @@ public:
     Complex(double im, double re);
     Complex();
     Complex(double re);
+    Complex add(Complex a, Complex b);
+
+    //getters
+    double getIm();
+    double getRe();
+
+    //setters
+    void setIm(double Im);
+    void setRe(double Re);
 
 
 };
