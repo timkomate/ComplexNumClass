@@ -16,11 +16,12 @@ public:
     Complex(double im, double re);
     Complex();
     Complex(double re);
-    Complex add(Complex a, Complex b);
+    static Complex add(Complex a, Complex b);
+    static Complex multiply(Complex a, Complex b);
 
     //getters
-    double getIm();
-    double getRe();
+    double const getIm();
+    double const getRe();
 
     //setters
     void setIm(double Im);

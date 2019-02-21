@@ -5,7 +5,7 @@
 #include "../include/Complex.h"
 #include "iostream"
 
-Complex::Complex(double re, double im){
+Complex::Complex(double const re, double const im){
     this->im = im;
     this->re = re;
 }
@@ -15,31 +15,43 @@ Complex::Complex() {
     this->im = 0;
 }
 
-Complex::Complex(double re) {
+Complex::Complex(double const re) {
     this->re = re;
     this->im = 0;
 }
 
-double Complex::getRe(){
+double const Complex::getRe(){
     return re;
 }
 
-double Complex::getIm(){
+double const Complex::getIm(){
     return im;
 }
 
-void Complex::setRe(double re){
+void Complex::setRe(double const re){
     this->re = re;
 }
 
-void Complex::setIm(double im){
+void Complex::setIm(double const im){
     this->im = im;
 }
 
 Complex Complex::add(Complex a, Complex b){
     Complex c;
-    c.setIm(a.getIm() + b.getIm());
-    c.setRe(a.getRe() + b.getRe());
+    double i = a.getIm() + b.getIm();
+    double j = a.getRe() + b.getRe();
+    c.setIm(i);
+    c.setRe(j);
+    return c;
+}
+
+Complex Complex::multiply(Complex a, Complex b){
+    Complex c;
+    double i = (a.getRe() * b.getRe()) - (a.getIm()*b.getIm());
+    double j = a.getRe()*b.getIm() + a.getIm() * b.getRe();
+    c.setRe(i);
+    c.setIm(j);
+    return c;
 }
 
 std::ostream& operator<<(std::ostream& os, Complex cp){

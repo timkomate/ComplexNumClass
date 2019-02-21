@@ -3,7 +3,10 @@
 #include "include/Complex.h"
 
 int main() {
-    Complex c(1, 0);
+    Complex a(1, 2);
+    Complex b(5,3);
+    Complex c;
+    c = Complex::multiply(a,b);
     std::cout << c << std::endl;
 
     return 0;
