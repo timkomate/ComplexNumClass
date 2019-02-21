@@ -7,4 +7,4 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
 
-add_executable(ComplexClass main.cpp src/Complex.cpp src/Complex.h)
+add_executable(ComplexClass main.cpp src/Complex.cpp include/Complex.h)
