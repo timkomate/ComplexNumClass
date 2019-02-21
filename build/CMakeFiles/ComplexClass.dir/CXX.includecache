@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/timko/Dokumentumok/C++/ComplexNumClass/main.cpp
+iostream
+-
+src/Complex.h
+/home/timko/Dokumentumok/C++/ComplexNumClass/src/Complex.h
+
+/home/timko/Dokumentumok/C++/ComplexNumClass/src/Complex.cpp
+Complex.h
+/home/timko/Dokumentumok/C++/ComplexNumClass/src/Complex.h
+
+/home/timko/Dokumentumok/C++/ComplexNumClass/src/Complex.h
+

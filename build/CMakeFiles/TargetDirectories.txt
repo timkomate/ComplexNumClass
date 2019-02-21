@@ -1,0 +1,3 @@
+/home/timko/Dokumentumok/C++/ComplexNumClass/build/CMakeFiles/rebuild_cache.dir
+/home/timko/Dokumentumok/C++/ComplexNumClass/build/CMakeFiles/edit_cache.dir
+/home/timko/Dokumentumok/C++/ComplexNumClass/build/CMakeFiles/ComplexClass.dir
