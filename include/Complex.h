@@ -5,6 +5,8 @@
 #ifndef COMPLEXCLASS_COMPLEX_H
 #define COMPLEXCLASS_COMPLEX_H
 
+#include<iostream>
+
 
 class Complex {
 private:
@@ -24,6 +26,7 @@ public:
     void setIm(double Im);
     void setRe(double Re);
 
+    friend std::ostream& operator<<(std::ostream& os, const Complex cp);
 
 };
 

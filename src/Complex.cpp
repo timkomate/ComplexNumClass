@@ -3,8 +3,9 @@
 //
 
 #include "../include/Complex.h"
+#include "iostream"
 
-Complex::Complex(double im, double re){
+Complex::Complex(double re, double im){
     this->im = im;
     this->re = re;
 }
@@ -20,11 +21,11 @@ Complex::Complex(double re) {
 }
 
 double Complex::getRe(){
-    return this->re;
+    return re;
 }
 
 double Complex::getIm(){
-    return this->im;
+    return im;
 }
 
 void Complex::setRe(double re){
@@ -39,4 +40,9 @@ Complex Complex::add(Complex a, Complex b){
     Complex c;
     c.setIm(a.getIm() + b.getIm());
     c.setRe(a.getRe() + b.getRe());
+}
+
+std::ostream& operator<<(std::ostream& os, Complex cp){
+    os << cp.getRe() << "+" << cp.getIm() << "i";
+    return os;
 }
