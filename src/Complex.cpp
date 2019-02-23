@@ -65,3 +65,11 @@ bool operator==(const Complex& lhs, const Complex& rhs){
     }
     return false;
 }
+
+Complex operator+(const Complex& lhs, const Complex& rhs){
+    return Complex::add(lhs, rhs);
+}
+
+Complex operator*(const Complex& lhs, const Complex& rhs){
+    return Complex::multiply(lhs, rhs);
+}

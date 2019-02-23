@@ -29,7 +29,8 @@ public:
 
     friend std::ostream& operator<<(std::ostream& os, const Complex& cp);
     friend bool operator==(const Complex& lhs, const Complex& rhs);
-
+    friend Complex operator+(const Complex& lhs, const Complex& rhs);
+    friend Complex operator*(const Complex& lhs, const Complex& rhs);
 };
 
 
