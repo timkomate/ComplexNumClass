@@ -20,14 +20,15 @@ public:
     static Complex multiply(Complex a, Complex b);
 
     //getters
-    double const getIm();
-    double const getRe();
+    double getIm() const;
+    double getRe() const;
 
     //setters
     void setIm(double Im);
     void setRe(double Re);
 
-    friend std::ostream& operator<<(std::ostream& os, const Complex cp);
+    friend std::ostream& operator<<(std::ostream& os, const Complex& cp);
+    friend bool operator==(const Complex& lhs, const Complex& rhs);
 
 };
 

@@ -20,11 +20,11 @@ Complex::Complex(double const re) {
     this->im = 0;
 }
 
-double const Complex::getRe(){
+double Complex::getRe() const{
     return re;
 }
 
-double const Complex::getIm(){
+double Complex::getIm() const{
     return im;
 }
 
@@ -54,7 +54,14 @@ Complex Complex::multiply(Complex a, Complex b){
     return c;
 }
 
-std::ostream& operator<<(std::ostream& os, Complex cp){
+std::ostream& operator<<(std::ostream& os, const Complex& cp){
     os << cp.getRe() << "+" << cp.getIm() << "i";
     return os;
+}
+
+bool operator==(const Complex& lhs, const Complex& rhs){
+    if (lhs.getIm() == rhs.getIm() && rhs.getRe() == rhs.getIm()){
+        return true;
+    }
+    return false;
 }
