@@ -16,3 +16,9 @@ iostream
 include/Complex.h
 /home/timko/Dokumentumok/C++/ComplexNumClass/include/Complex.h
 
+/home/timko/Dokumentumok/C++/ComplexNumClass/src/Complex.cpp
+../include/Complex.h
+/home/timko/Dokumentumok/C++/ComplexNumClass/include/Complex.h
+iostream
+/home/timko/Dokumentumok/C++/ComplexNumClass/src/iostream
+

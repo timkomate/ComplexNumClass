@@ -18,7 +18,7 @@ public:
     Complex(double re);
     static Complex add(Complex a, Complex b);
     static Complex multiply(Complex a, Complex b);
-
+    static Complex subtraction(Complex a, Complex b);
     //getters
     double getIm() const;
     double getRe() const;
@@ -30,7 +30,10 @@ public:
     friend std::ostream& operator<<(std::ostream& os, const Complex& cp);
     friend bool operator==(const Complex& lhs, const Complex& rhs);
     friend Complex operator+(const Complex& lhs, const Complex& rhs);
+    friend Complex operator-(const Complex& lhs, const Complex& rhs);
     friend Complex operator*(const Complex& lhs, const Complex& rhs);
+    
+
 };
 
 

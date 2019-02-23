@@ -45,6 +45,13 @@ Complex Complex::add(Complex a, Complex b){
     return c;
 }
 
+Complex Complex::subtraction(Complex a, Complex b){
+    Complex c;
+    c.setIm(a.getIm() - b.getIm());
+    c.setRe(a.getRe() - b.getRe());
+    return c;
+}
+
 Complex Complex::multiply(Complex a, Complex b){
     Complex c;
     double i = (a.getRe() * b.getRe()) - (a.getIm()*b.getIm());
@@ -72,4 +79,8 @@ Complex operator+(const Complex& lhs, const Complex& rhs){
 
 Complex operator*(const Complex& lhs, const Complex& rhs){
     return Complex::multiply(lhs, rhs);
+}
+
+Complex operator-(const Complex& lhs, const Complex& rhs){
+    return Complex::subtraction(lhs, rhs);
 }
